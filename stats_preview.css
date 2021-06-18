@@ -1,0 +1,114 @@
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-family: 'Inter', sans-serif;
+	background-color: hsl(233, 47%, 7%);
+	color: white;
+	font-size: 15px;
+}
+.spacer {
+	display: grid;
+	grid-template-columns: 1fr;
+	height: 250px;
+}
+.card_container {
+	margin: 0 auto;
+	max-width: 977px;
+	height: 350px;
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+.text_box {
+	display: grid;
+	grid-template-rows: 36% 38% 25%;
+	background-color: hsl(244, 38%, 16%);
+	padding: 30px;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+}
+.heading {
+	font-weight: 700;
+	font-size: 2em;
+}
+mark {
+	color: hsl(277, 64%, 61%);
+	background-color: #ffffff00;
+}
+.description {
+	color: hsla(0, 0%, 100%, 0.75);
+	line-height: 1.7em;
+	padding-bottom: 20px;
+}
+.stats_container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr; 
+}
+.stat_nums {
+	font-weight: 700;
+	font-size: 1.2em;
+}
+.stat_heads {
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 0.8em;
+	line-height: 0.1;
+	color: hsla(0, 0%, 100%, 0.6);
+}
+.image_box {
+	background: url(images/image-header-desktop.jpg);
+	background-size: 100% 100%;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.overlay {
+	height: 100%;
+	width: 100%;
+	background: hsla(277, 64%, 61%, 55%);
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.attribution {
+	height: 100px;
+	text-align: center;
+	line-height: 170px;
+	font-size: 0.6em;
+}
+@media only screen and (max-width: 810px) {
+	.spacer {
+		height: 10px;
+	}
+	.card_container {
+		height: 800px;
+		max-width: 600px;
+		grid-template-columns: 1fr;
+		grid-template-rows: 40% 60%;
+		text-align: center;
+		max-width: 50ch;
+	}
+	.image_box {
+		grid-row: 1 / 2;
+		background: url(images/image-header-mobile.jpg);
+		background-size: 100% 100%;
+		border-bottom-right-radius: 0px;
+		border-top-left-radius: 10px;
+	}
+	.overlay {
+		border-bottom-right-radius: 0px;
+		border-top-left-radius: 10px;
+	}
+	.text_box {
+		grid-template-columns: 1fr;
+		grid-template-rows: 33% 25% 42%;
+		border-bottom-right-radius: 10px;
+		border-top-left-radius: 0px;
+		padding: 15px;
+	}
+	.stats_container {
+		grid-template-columns: 1fr;
+		grid-template-rows: 33% 33% 33%;
+		padding-bottom: 10px;
+	}
+	.attribution {
+		line-height: 25px;
+	}
+}
