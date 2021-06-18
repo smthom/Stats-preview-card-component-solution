@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution]()
-- Live Site URL: [Live Site]()
+- Solution URL: [Solution](https://github.com/smthom/Stats-preview-card-component-solution)
+- Live Site URL: [Live Site](https://smthom.github.io/Stats-preview-card-component-solution/stats_preview.html)
 
 ## My process
 
